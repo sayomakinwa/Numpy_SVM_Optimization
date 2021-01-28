@@ -9,22 +9,21 @@ sys.path.append(dir_path[0:-1])
 from utils import *
 from svm_code import *
 
+
 if __name__ ==  "__main__":
-	params.gamma = 3
-	params.C = 2.5
-	params.kernel_method = "poly"
+	params.gamma = 0.001
+	params.C = 3
+	params.kernel_method = "rbf"
 	svm = SVM(params)
-	opt_time, kkt_viol, iter = svm.fit_MVP(x_train38, y_train38)
-	(opt_time, kkt_viol)
+	sol, opt_time, kkt_viol = svm.fit(x_train38, y_train38)
 
 	print("C: {}".format(svm.C))
 	print("Gamma: {}".format(svm.gamma))
-	print("q: 100")
 	print("Train accuracy: {}".format(np.sum(svm.predict(x_train38) == y_train38) / y_train38.shape[0]))
 	y_pred = svm.predict(x_test38)
 	print("Test accuracy: {}".format(np.sum(y_pred == y_test38) / y_test38.shape[0]))
-	print("Final obj func val: {}".format(svm.obj_function()[0]))
-	print("No of iterations: {}".format(iter))
+	print("Final obj func val: {}".format(svm.obj_function()[0,0]))
+	print("No of func eval: {}".format(sol["iterations"]))
 	print("KKT Violation: {}".format(kkt_viol))
 	print("Status: {} Optimal".format("NOT" if kkt_viol > 0 else ""))
 	print("CPU Time: {}".format(opt_time))
