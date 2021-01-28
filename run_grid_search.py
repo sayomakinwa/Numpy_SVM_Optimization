@@ -2,7 +2,7 @@ import sys, os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(dir_path[0:-1])
 from utils import *
-from svm_code import *
+from model.svm_code import *
 
 
 # RBF Kernel

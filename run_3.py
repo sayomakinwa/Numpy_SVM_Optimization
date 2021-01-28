@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 dir_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(dir_path[0:-1])
 from utils import *
-from svm_code import *
+from model.svm_code import *
 
 if __name__ ==  "__main__":
 	params.gamma = 3

@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 dir_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(dir_path[0:-1])
 from utils import *
-from svm_multi_code import *
+from model.svm_multi_code import *
 
 if __name__ ==  "__main__":
 	x_train368, x_test368, y_train368, y_test368 = bonus_task_data
