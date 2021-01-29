@@ -9,7 +9,6 @@ sys.path.append(dir_path[0:-1])
 from utils import *
 from model.svm_code import *
 
-
 if __name__ ==  "__main__":
 	params.gamma = 3
 	params.C = 2.5
