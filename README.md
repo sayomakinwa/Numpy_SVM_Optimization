@@ -1,1 +1,3 @@
-# Numpy_SVM_Optimization
+# Numpy SVM Impementation
+
+Implementation of Support Vector Machines with numpy and optimization with KKT conditions

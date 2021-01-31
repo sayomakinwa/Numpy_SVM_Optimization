@@ -5,11 +5,6 @@ import numpy as np
 import os, sys, gzip, itertools, random, time
 
 
-SEED = 1858908
-random.seed(SEED)
-np.random.seed(SEED)
-
-
 def load_mnist(path, kind='train'):
     """
     @author: Diego 
