@@ -1,15 +1,17 @@
 # Numpy SVM Impementation
 
-Implementation of a Support Vector Machine classifier with numpy and optimization with KKT conditions.
+Implementation of a Support Vector Machine classifier over images of handwritten digits from the MNIST database, with numpy and optimization with KKT conditions.
 
-You are asked to build a classifier that distinguishes between images of handwritten digits from the MNIST database.
 
 ## The Dataset
 
+Each sample of the MNIST dataset is a 28x28 grayscale image, associated with a label. The only preprocessing required by this dataset is scaling. The dataset file has all the images, but only images belonging to labels 3 and 8 are used for the task in number 1 to 3, while label 6 is also added for the task in number 4. The test set is extracted as 20% of the data. 
+
+All the configuration of the dataset can be changed in the `load_mnist()` function in the `utils.py` file. 
 
 
 
-## The code
+## Running the Code
 
 Each `run_#.py` file is an implementation for the task described in the list below (`#` corressponds to each number):
 
