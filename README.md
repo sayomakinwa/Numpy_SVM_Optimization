@@ -10,7 +10,6 @@ Each sample of the MNIST dataset is a 28x28 grayscale image, associated with a l
 All the configuration of the dataset can be changed in the `load_mnist()` function in the `utils.py` file. 
 
 
-
 ## Running the Code
 
 Each `run_#.py` file is an implementation for the task described in the list below (`#` corressponds to each number):
