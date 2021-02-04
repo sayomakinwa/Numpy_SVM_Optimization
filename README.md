@@ -1,6 +1,23 @@
 # Numpy SVM Impementation
 
-Implementation of a Support Vector Machine classifier over images of handwritten digits from the MNIST database, with numpy and optimization with KKT conditions.
+## The Task
+
+Implementation of a nonlinear Support Vector Machine classifier over images of handwritten digits from the MNIST database, with numpy and optimization with KKT conditions.
+
+The SVM problem is given as follows:
+
+![SVM](images/svm.png)
+
+Where `α, b` are obtained as the optimal solution of the dual nonlinear SVM problem, and kernel `k(,)` is the corresponding nonlinear decision function. Both polynomial and rbf kernels are implemented in this project. Their equations are as follows, respectively:
+
+![Polynomial Kernel](images/poly_kernel.png)
+
+<br>
+
+![RBF Kernel](images/rbf_kernel.png)
+
+
+The polynomial kernel is set as the default.
 
 
 ## The Dataset
