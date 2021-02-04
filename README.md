@@ -1,10 +1,12 @@
 # Numpy SVM Impementation
 
-Implementation of Support Vector Machines with numpy and optimization with KKT conditions.
+Implementation of a Support Vector Machine classifier with numpy and optimization with KKT conditions.
+
+You are asked to build a classifier that distinguishes between images of handwritten digits from the MNIST database.
 
 ## The Dataset
 
-Blah blah blah
+
 
 
 ## The code
